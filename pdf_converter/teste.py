@@ -31,7 +31,7 @@ def convert_pdf_to_txt(path):
         interpreter.process_page(page)
 
     text = retstr.getvalue()
-    filename = ('teste.csv')
+    filename = ('teste.xlsx')
     # out_csv = ('teste2.csv')
     f = open(filename, 'wt', encoding='utf-8', newline='')
     f.write(u'\uFEFF')
